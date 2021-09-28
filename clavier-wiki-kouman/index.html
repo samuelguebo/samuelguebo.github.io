@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=yes"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Clavier des langues africaines | Wiki Kouman</title>
+    <link rel="stylesheet" type="text/css" href="css/keyboard.css" />
+    <script type="text/javascript">
+      function disable() {
+        document.onkeydown = function (e) {
+          return false;
+        };
+      }
+
+      window.onload = disable;
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-3">
+          <h1 class="text-center h1__50">
+            <span class="text-white">Clavier</span>
+            <span class="text-warning">Wiki</span>
+            <span class="text-danger">Kouman</span>
+          </h1>
+        </div>
+      </div>
+
+      <div class="row" id="container" align="center">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              rows="12"
+              name="the-textarea"
+              id="write"
+              placeholder="&#10;&#10;&#10;&#10;Mí wlan núdé do fí...&#10;Écrivez quelque chose ici...&#10;Write something..."
+            ></textarea>
+          </div>
+        </div>
+
+       <div class="col-md-12">
+          <ul id="keyboard" style="font-size: 15px">
+            <div class="row">
+              <div class="col 2">
+                <li class="symbol">
+                  <span class="off">`</span><span class="on">~</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">1</span><span class="on">!</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">2</span><span class="on">@</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">3</span><span class="on">#</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">4</span><span class="on">$</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">5</span><span class="on">%</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">6</span><span class="on">^</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">7</span><span class="on">&amp;</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">8</span><span class="on">*</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">9</span><span class="on">(</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">0</span><span class="on">)</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">-</span><span class="on">_</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">=</span><span class="on">+</span>
+                </li>
+                <li class="delete fa fa-arrow-left"></li>
+
+                <li class="diacritics" style="clear: left">à</li>
+                <li class="diacritics">á</li>
+                <li class="diacritics">ā</li>
+                <li class="diacritics">ǎ</li>
+
+                <li class="diacritics">ɔ</li>
+                <li class="diacritics">ɔ̀</li>
+                <li class="diacritics">ɔ́</li>
+                <li class="diacritics">ɔ̄</li>
+                <li class="diacritics">ɔ̌</li>
+
+                <li class="diacritics">ɛ</li>
+                <li class="diacritics">ɛ̀</li>
+                <li class="diacritics">ɛ́</li>
+                <li class="diacritics">ɛ̄</li>
+                <li class="diacritics">ɛ̌</li>
+
+                <li class="diacritics">ò</li>
+                <li class="diacritics" style="clear: left">ó</li>
+                <li class="diacritics">ǒ</li>
+                <li class="diacritics">ō</li>
+
+                <li class="diacritics">ć</li>
+                <li class="diacritics">č</li>
+
+                <li class="diacritics">ɖ</li>
+
+                <li class="diacritics">ì</li>
+                <li class="diacritics">í</li>
+                <li class="diacritics">ǐ</li>
+                <li class="diacritics">ī</li>
+
+                <li class="diacritics">é</li>
+                <li class="diacritics">è</li>
+                <li class="diacritics">ě</li>
+                <li class="diacritics">ē</li>
+
+                <li class="diacritics">ŋ</li>
+
+                <!-- Wiki kouman -->
+                <li class="diacritics wiki-kouman" style="clear: left">ɔ</li>
+                <li class="diacritics wiki-kouman">ὶ</li>
+                <li class="diacritics wiki-kouman">ί</li>
+
+                <li class="diacritics wiki-kouman">ʋ</li>
+                <li class="diacritics wiki-kouman">ᶓ</li>
+
+                <li class="diacritics wiki-kouman">ύ</li>
+
+                <li class="diacritics wiki-kouman">ό</li>
+                <li class="diacritics wiki-kouman">Ԑ</li>
+                <li class="diacritics wiki-kouman">ɩ</li>
+                <li class="diacritics wiki-kouman">ĺ</li>
+
+                <li class="diacritics wiki-kouman">ᵝ</li>
+                <li class="diacritics wiki-kouman">ä</li>
+                <li class="diacritics wiki-kouman">ᶴ</li>
+                <li class="diacritics wiki-kouman">ʃ</li>
+
+                <li class="diacritics wiki-kouman">ʋ</li>
+
+
+                <li class="tab">
+                  &#8633;
+                </li>
+                <li class="letter">a</li>
+                <li class="letter">z</li>
+                <li class="letter">e</li>
+                <li class="letter">r</li>
+                <li class="letter">t</li>
+                <li class="letter">y</li>
+                <li class="letter">u</li>
+                <li class="letter">i</li>
+                <li class="letter">o</li>
+                <li class="letter">p</li>
+
+                <li class="symbol">
+                  <span class="off">[</span><span class="on">{</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">]</span><span class="on">}</span>
+                </li>
+                <li class="symbol lastitem">
+                  <span class="off">\</span><span class="on">|</span>
+                </li>
+                <li class="capslock">
+                  &#8682;
+                </li>
+                <li class="letter">q</li>
+                <li class="letter">s</li>
+                <li class="letter">d</li>
+                <li class="letter">f</li>
+                <li class="letter">g</li>
+                <li class="letter">h</li>
+                <li class="letter">j</li>
+                <li class="letter">k</li>
+                <li class="letter">l</li>
+                <li class="symbol">
+                  <span class="off">;</span><span class="on">:</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">'</span><span class="on">&quot;</span>
+                </li>
+                <li class="return lastitem" style="font-size: 23px">&#8626;</li>
+                <li class="left-shift">
+                  &#8679;
+                </li>
+                <li class="letter">w</li>
+                <li class="letter">x</li>
+                <li class="letter">c</li>
+                <li class="letter">v</li>
+                <li class="letter">b</li>
+                <li class="space lastitem">&#9141;</li>
+                <li class="letter">n</li>
+                <li class="letter">m</li>
+                <li class="symbol">
+                  <span class="off">,</span><span class="on">&lt;</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">.</span><span class="on">&gt;</span>
+                </li>
+                <li class="symbol">
+                  <span class="off">/</span><span class="on">?</span>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <!-- Copyright -->
+        <div class="source-code text-center py-3">
+        <div class="text">
+          Source code is <a href="https://github.com/samuelguebo/clavier-wiki-kouman"> available here</a>
+        </div>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="js/fonjs.js"></script>
+    <script type="text/javascript">
+      function enable() {
+        document.onkeydown = function (e) {
+          return true;
+        };
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
