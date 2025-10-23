@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Code128 with Bwip-js</title>
+<style>
+  body { font-family: sans-serif; padding: 20px; }
+  #barcode { margin: 20px 0px; border: solid 1px}
+  textarea { padding: 10px;}
+  
+</style>
+</head>
+<body>
+
+<div id="barcode">
+  <canvas id="canvas"></canvas>
+</div>
+
+<input type="text" id="input" placeholder="Enter text"/>
+<!-- Load Bwip-js -->
+<script src="https://unpkg.com/bwip-js/dist/bwip-js-min.js"></script>
+<script>
+const canvas = document.getElementById("canvas");
+
+function generateBarcode(text) {
+  if (!text) {
+    const ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    return;
+  }
+
+  try {
+    bwipjs.toCanvas(canvas, {
+      bcid: 'code128',        // Barcode type
+      text: text,             // Data to encode
+      scaleX: 2,              // Horizontal scaling factor
+      scaleY: 2,              // Vertical scaling factor
+      height: 40.8,           // Bar height (in pixels)
+      width: 131.6,           // Overall width (optional)
+      includetext: false,     // Don’t print human-readable text
+      textxalign: 'center',
+      backgroundcolor: 'FFFFFF',
+      barcolor: '000000'
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+document.getElementById("input").addEventListener("input", e => {
+  generateBarcode(e.target.value);
+});
+</script>
+
+</body>
+</html>
